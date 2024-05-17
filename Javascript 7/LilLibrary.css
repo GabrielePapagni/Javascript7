@@ -1,0 +1,64 @@
+.title {
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.minititle {
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.left {
+    left: 30px
+}
+
+.minititle2 {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.bigDiv {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input {
+    width: 800px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.GET {
+    border: black 10px;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(163, 224, 145);
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.POST {
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(122, 202, 195);
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.PUT {
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(212, 128, 128);
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
