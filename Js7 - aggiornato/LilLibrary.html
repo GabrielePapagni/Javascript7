@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lil Library</title>
+        <link rel="stylesheet" href="LilLibrary.css">
+        <link rel="icon" type="image/x-icon" href="Immagini/LogoLibro.png">
+    </head>
+    <body>
+        <h1 class="title">Lil Library</h1>
+
+        <div class="centered-buttons">             <!-- Main navigation buttons -->
+            <button class="button main-nav-button" data-section-id="section-book">Book</button>
+            <button class="button main-nav-button" data-section-id="section-bookshelf">Bookshelf</button>
+            <button class="button main-nav-button" data-section-id="section-genre">Genre</button>
+        </div>
+
+        <div class="main-section" id="section-book">                                <!-- Big div BOOK -->
+            <h2 class="minititle">Book</h2>
+            <div class="GET section section-get" id="section-get-book">                     <!-- Search book (GET) -->
+                <h2 class="minititle2">GET</h2>
+                <p>Search using the book's title:</p>
+                <input class="input" id="get-book" placeholder="Enter book's title">
+                <br/><br/>
+                <button class="button" id="btnget-book">Search</button>
+                <div id="output-book1"></div>
+                <button class="button choose-button" data-section-id="section-post-book">Choose POST</button>
+                <button class="button choose-button" data-section-id="section-put-book">Choose PUT</button>
+            </div>
+
+            <div class="POST section" id="section-post-book" style="display: none;">        <!-- Create book (POST) -->
+                <h2 class="minititle2">POST</h2>
+                <form id="form-post-book">
+                    <p>Create a book:</p>
+                    <label for="post-id-book">Book ID</label>
+                    <input class="input" id="post-id-book" placeholder="Enter book's ID">
+                    <label for="post-title-book">Book Title</label>
+                    <input class="input" id="post-title-book" placeholder="Enter book's title">
+                    <label for="post-price-book">Book Price</label>
+                    <input class="input" id="post-price-book" placeholder="Enter book's price">
+                    <label for="post-genreid-book">Genre ID</label>
+                    <input class="input" id="post-genreid-book" placeholder="Enter genre's ID">
+                    <label for="post-shelfid-book">Bookshelf ID</label>
+                    <input class="input" id="post-shelfid-book" placeholder="Enter bookshelf's ID">
+                    <label for="post-genre-book">Book Genre</label>
+                    <input class="input" id="post-genre-book" placeholder="Enter book's genre">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnpost-book">Create</button>
+                    <div id="output-book2"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-book">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-put-book">Choose PUT</button>
+            </div>
+
+            <div class="PUT section" id="section-put-book" style="display: none;">          <!-- Modify book (PUT) -->
+                <h2 class="minititle2">PUT</h2>
+                <form id="form-put-book">
+                    <p>Modify a book:</p>
+                    <label for="put-book">Book Title</label>
+                    <input class="input" id="put-book" placeholder="Enter book's title">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnput-book">Modify</button>
+                    <div id="output-book3"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-book">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-post-book">Choose POST</button>
+            </div>
+        </div>  <!-- End big div -->
+
+        <div class="main-section" id="section-bookshelf" style="display: none;">    <!-- Big div BOOKSHELF -->
+            <h2 class="minititle">Bookshelf</h2>
+            <div class="GET section section-get" id="section-get-bookshelf">                <!-- Search bookshelf (GET) -->
+                <h2 class="minititle2">GET</h2>
+                <p>Search using the bookshelf's ID:</p>
+                <input class="input" id="get-bookshelf" placeholder="Enter bookshelf's ID">
+                <br/><br/>
+                <button class="button" id="btnget-bookshelf">Search</button>
+                <div id="output-bookshelf1"></div>
+                <button class="button choose-button" data-section-id="section-post-bookshelf">Choose POST</button>
+                <button class="button choose-button" data-section-id="section-put-bookshelf">Choose PUT</button>
+            </div>
+
+            <div class="POST section" id="section-post-bookshelf" style="display: none;">   <!-- Create bookshelf (POST) -->
+                <h2 class="minititle2">POST</h2>
+                <form id="form-post-bookshelf">
+                    <p>Create a bookshelf:</p>
+                    <label for="post-id-bookshelf">Bookshelf ID</label>
+                    <input class="input" id="post-id-bookshelf" placeholder="Enter bookshelf's ID">
+                    <label for="post-location-bookshelf">Location</label>
+                    <input class="input" id="post-location-bookshelf" placeholder="Enter location">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnpost-bookshelf">Create</button>
+                    <div id="output-bookshelf2"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-bookshelf">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-put-bookshelf">Choose PUT</button>
+            </div>
+
+            <div class="PUT section" id="section-put-bookshelf" style="display: none;">     <!-- Modify bookshelf (PUT) -->
+                <h2 class="minititle2">PUT</h2>
+                <form id="form-put-bookshelf">
+                    <p>Modify a bookshelf:</p>
+                    <label for="put-bookshelf">Bookshelf ID</label>
+                    <input class="input" id="put-bookshelf" placeholder="Enter bookshelf's ID">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnput-bookshelf">Modify</button>
+                    <div id="output-bookshelf3"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-bookshelf">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-post-bookshelf">Choose POST</button>
+            </div>
+        </div>  <!-- End big div -->
+
+        <div class="main-section" id="section-genre" style="display: none;">        <!-- Big div GENRE -->
+            <h2 class="minititle">Genre</h2>
+            <div class="GET section section-get" id="section-get-genre">                    <!-- Search genre (GET) -->
+                <h2 class="minititle2">GET</h2>
+                <p>Search using the genre's ID:</p>
+                <input class="input" id="get-genre" placeholder="Enter genre's ID">
+                <br/><br/>
+                <button class="button" id="btnget-genre">Search</button>
+                <div id="output-genre1"></div>
+                <button class="button choose-button" data-section-id="section-post-genre">Choose POST</button>
+                <button class="button choose-button" data-section-id="section-put-genre">Choose PUT</button>
+            </div>
+
+            <div class="POST section" id="section-post-genre" style="display: none;">       <!-- Create genre (POST) -->
+                <h2 class="minititle2">POST</h2>
+                <form id="form-post-genre">
+                    <p>Create a genre:</p>
+                    <label for="post-id-genre">Genre ID</label>
+                    <input class="input" id="post-id-genre" placeholder="Enter genre's ID">
+                    <label for="post-name-genre">Genre Name</label>
+                    <input class="input" id="post-name-genre" placeholder="Enter genre's name">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnpost-genre">Create</button>
+                    <div id="output-genre2"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-genre">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-put-genre">Choose PUT</button>
+            </div>
+
+            <div class="PUT section" id="section-put-genre" style="display: none;">         <!-- Modify genre (PUT) -->
+                <h2 class="minititle2">PUT</h2>
+                <form id="form-put-genre">
+                    <p>Modify a genre:</p>
+                    <label for="put-genre">Genre ID</label>
+                    <input class="input" id="put-genre" placeholder="Enter genre's ID">
+                    <br/><br/>
+                    <button class="button" type="submit" id="btnput-genre">Modify</button>
+                    <div id="output-genre3"></div>
+                </form>
+                <button class="button choose-button" data-section-id="section-get-genre">Choose GET</button>
+                <button class="button choose-button" data-section-id="section-post-genre">Choose POST</button>
+            </div>
+        </div>
+
+        <script src="LilLibrary.js"></script>
+    </body>
+</html>

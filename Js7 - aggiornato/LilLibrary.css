@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #444;
+}
+
+.minititle {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.minititle2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.input {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Contenitore dei bottoni */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Stili per i bottoni */
+.main-nav-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Stile hover per i bottoni */
+.main-nav-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#output-book1, #output-book2 , #output-book3, #output-bookshelf1, #output-bookshelf2, #output-bookshelf3, #output-genre1, #output-genre2, #output-genre3 {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main-section {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.main-section.active {
+    display: block;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.choose-button {
+    background-color: #28a745;
+}
+
+.choose-button:hover {
+    background-color: #218838;
+}
+
+/* CSS per centrare i bottoni nella pagina */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Aggiunge spazio sopra i bottoni */
+}
+
+.main-nav-button {
+    margin: 0 10px; /* Aggiunge spazio tra i pulsanti */
+}
